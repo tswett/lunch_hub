@@ -37,3 +37,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+group :development do
+  gem 'cucumber-rails', "~> 1.3.0"
+end
