@@ -4,16 +4,16 @@
       <h2><%= pluralize(@lunch_desire.errors.count, "error") %> prohibited this lunch_desire from being saved:</h2>
 
       <ul>
-      <% @lunch_desire.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @lunch_desire.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="field">
-    <%= f.text_field :name_of_person, :placeholder => "Your name" %>
-    wants to go to
+    <%= f.text_field :name_of_person, :placeholder => "Your name" %><br />
+    wants to go to<br />
     <%= f.text_field :name_of_restaurant, :placeholder => "McDonald's" %>
   </div>
   <div class="actions">
