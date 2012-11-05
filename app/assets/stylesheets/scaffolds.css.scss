@@ -3,6 +3,11 @@ body {
   color: #333;
   font-family: Helvetica;
   font-size: 18px;
+  padding: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 input {
@@ -14,13 +19,23 @@ p, ol, ul, td {
   font-family: Helvetica;
 }
 
+p {
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
 header {
   margin: 20px 0 50px 0;
   h1, h2 {
     text-align: center;
   }
   h1 {
-    font-family: Georgia;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 3em;
@@ -30,8 +45,26 @@ header {
     }
   }
   h2 {
-    font-size: 1em;
+    font-family: Georgia;
+    font-size: 1.2em;
     font-weight: normal;
+    font-style: normal;
+  }
+}
+
+nav {
+  a {
+    font-weight: bold;
+    font-family: Georgia;
+    color: #333;
+    text-decoration: none;
+  }
+  ul {
+    text-align: center;
+    li {
+      display: inline;
+      padding: 0 3px;
+    }
   }
 }
 

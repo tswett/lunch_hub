@@ -1,4 +1,7 @@
 LunchHub::Application.routes.draw do
+  get "static_pages/about"
+  match 'about' => 'static_pages#about'
+
   resources :lunch_desires
 
   # The priority is based upon order of creation:
