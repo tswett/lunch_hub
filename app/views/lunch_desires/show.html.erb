@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name of person:</b>
+  <%= @lunch_desire.name_of_person %>
+</p>
+
+<p>
+  <b>Name of restaurant:</b>
+  <%= @lunch_desire.name_of_restaurant %>
+</p>
+
+
+<%= link_to 'Edit', edit_lunch_desire_path(@lunch_desire) %> |
+<%= link_to 'Back', lunch_desires_path %>

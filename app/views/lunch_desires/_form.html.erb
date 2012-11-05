@@ -1,0 +1,25 @@
+<%= form_for(@lunch_desire) do |f| %>
+  <% if @lunch_desire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lunch_desire.errors.count, "error") %> prohibited this lunch_desire from being saved:</h2>
+
+      <ul>
+      <% @lunch_desire.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_of_person, "Your name" %><br />
+    <%= f.text_field :name_of_person %>
+  </div>
+  <div class="field">
+    <%= f.label :name_of_restaurant, "Where you'd like to go to lunch" %><br />
+    <%= f.text_field :name_of_restaurant %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Save" %>
+  </div>
+<% end %>
