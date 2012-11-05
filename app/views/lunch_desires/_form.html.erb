@@ -12,12 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name_of_person, "Your name" %><br />
-    <%= f.text_field :name_of_person %>
-  </div>
-  <div class="field">
-    <%= f.label :name_of_restaurant, "Where you'd like to go to lunch" %><br />
-    <%= f.text_field :name_of_restaurant %>
+    <%= f.text_field :name_of_person, :placeholder => "Your name" %>
+    wants to go to
+    <%= f.text_field :name_of_restaurant, :placeholder => "McDonald's" %>
   </div>
   <div class="actions">
     <%= submit_tag "Save" %>

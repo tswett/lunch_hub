@@ -4,8 +4,8 @@ end
 
 When /^I announce that I'd like to go to "(.*?)"$/ do |restaurant_name|
   visit "/"
-  fill_in "Your name", :with => @user_name
-  fill_in "Where you'd like to go to lunch", :with => restaurant_name
+  fill_in "lunch_desire_name_of_person", :with => @user_name
+  fill_in "lunch_desire_name_of_restaurant", :with => restaurant_name
   click_on "Save"
 end
 
