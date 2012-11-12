@@ -1,11 +1,8 @@
-<div id="main_page">
+<div id="lunch_desires"></div>
 
-  <%= render 'form' %>
-
-  <ul>
-    <% @lunch_desires.each do |lunch_desire| %>
-      <li><%= lunch_desire.name_of_person %> wants to go to <%= lunch_desire.name_of_restaurant %></li>
-    <% end %>
-  </ul>
-
-</div>
+<script type="text/javascript">
+  $(function() {
+    window.router = new LunchHub.Routers.LunchDesiresRouter({lunchDesires: <%= @lunch_desires.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
