@@ -58,5 +58,12 @@ module LunchHub
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.active_record.pluralize_table_names = false
+    config.time_zone = 'Eastern Time (US & Canada)'
+
+    config.generators do |g|
+      g.test_framework :rspec
+    end
   end
 end
