@@ -11,7 +11,7 @@ class LunchHub.Views.LunchDesires.IndexView extends Backbone.View
 
   addOne: (lunchDesire) =>
     view = new LunchHub.Views.LunchDesires.LunchDesireView({model : lunchDesire})
-    @$("tbody").append(view.render().el)
+    @$("ul").append(view.render().el)
 
   render: =>
     $(@el).html(@template(lunchDesires: @options.lunchDesires.toJSON() ))
