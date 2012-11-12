@@ -13,7 +13,7 @@ class LunchHub.Views.LunchDesires.EditView extends Backbone.View
     @model.save(null,
       success : (lunch_desire) =>
         @model = lunch_desire
-        window.location.hash = "/#{@model.id}"
+        window.location.hash = "/#index"
     )
 
   render : ->

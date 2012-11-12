@@ -23,7 +23,7 @@ class LunchHub.Views.LunchDesires.NewView extends Backbone.View
     @collection.create(@model.toJSON(),
       success: (lunch_desire) =>
         @model = lunch_desire
-        window.location.hash = "/#{@model.id}"
+        window.location.hash = "/index"
 
       error: (lunch_desire, jqXHR) =>
         @model.set({errors: $.parseJSON(jqXHR.responseText)})
