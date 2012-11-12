@@ -4,7 +4,6 @@ class LunchHub.Views.LunchDesires.IndexView extends Backbone.View
   template: JST["backbone/templates/lunch_desires/index"]
 
   initialize: () ->
-    console.log(@options)
     @options.lunchDesires.bind('reset', @addAll)
 
   addAll: () =>

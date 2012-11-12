@@ -26,6 +26,8 @@ class LunchHub.Routers.LunchDesiresRouter extends Backbone.Router
 
   edit: (id) ->
     lunchDesire = @lunchDesires.get(id)
+    delete lunchDesire.attributes.created_at
+    delete lunchDesire.attributes.updated_at
 
     @view = new LunchHub.Views.LunchDesires.EditView(model: lunchDesire)
     $("#lunch_desires").html(@view.render().el)
