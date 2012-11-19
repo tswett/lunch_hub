@@ -6,8 +6,8 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-
 gem 'json'
+gem 'rails-backbone'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,6 +38,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
-group :development do
-  gem 'cucumber-rails', "~> 1.3.0"
+group :test do
+  gem 'rspec-rails', '~> 2.11.4'
+  gem 'cucumber-rails', '~> 1.3.0', :require => false
+  gem 'database_cleaner', '~> 0.9.1'
 end
